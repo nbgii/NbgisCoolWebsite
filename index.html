@@ -14,6 +14,15 @@ titleScroller("nbgi's website    ")
 function play() {
 }
 </script>
+<script>
+var quotes = ["&quot;I'm not so sure I want to get to the surface. What if the world finds out what we were doing down here?&quot;", "&quot;Shutting down. Attempting shut down. It's not...it's-it's not...it's not shutting down...it's not... &quot;", "&quot;They're waiting for you, Gordon. In the Test Chamber.&quot;", "&quot;Do you know who ate all the donuts?&quot;", "&quot;Hey, what the hell are you doing down here? Get topside! I hear troops are coming in to save us!&quot;", "&quot;Heh, that'll look nice in my trophy room.&quot;", "&quot;Hey, catch me later, I'll buy you a beer.&quot;", "&quot;Gordon Freeman in the flesh. Or rather, in the hazard suit.&quot;"];
+
+function newQuote() {
+  var randomNumber = Math.floor(Math.random() * quotes.length);
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+newQuote();
+</script>
 <style>
     body {
         font-family: "Trebuchet MS";
