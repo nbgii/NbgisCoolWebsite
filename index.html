@@ -164,7 +164,34 @@ resetBtn.addEventListener('mouseleave', function() {
   hover.currentTime = 0;
 }, false);
 </script>
-<b><center><h2 onclick="location.href='https://www.youtube.com/@kramoid'" style="color:red" id="playYT">YouTube</h2>
+<b><center><h2 onclick="location.href='coolsites.html'; ClickSFX()" style="color:silver" id="playCS">Cool Sites</h2>
+<script>
+var playBtn = document.getElementById('playCS'),
+  resetBtn = document.getElementById('reset'),
+  hearbeat = document.getElementById('hover')
+  audios = document.querySelectorAll('audio');
+console.log(audios);
+playBtn.addEventListener('mouseover', function() {
+[].forEach.call(audios, function(audio) {
+  hover.play();
+});
+}, false);
+
+playBtn.addEventListener('mouseleave', function() {
+  hover.pause();
+  hover.currentTime = 0;
+}, false);
+
+resetBtn.addEventListener('mouseover', function() {
+    hover.play();
+}, false);
+
+resetBtn.addEventListener('mouseleave', function() {
+  hover.pause();
+  hover.currentTime = 0;
+}, false);
+</script>
+<b><center><h2 onclick="location.href='https://www.youtube.com/@kramoid'; ClickSFX()" style="color:red" id="playYT">YouTube</h2>
 <script>
 var playBtn = document.getElementById('playYT'),
   resetBtn = document.getElementById('reset'),
