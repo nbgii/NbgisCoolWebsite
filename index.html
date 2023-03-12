@@ -41,6 +41,18 @@ function play() {
                        0 0 15px #fcee6a, 0 0 70px #fcee6a, 0 0 40px #fcee6a;
         }
       }
+	.foreground {
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		position: absolute;
+		opacity: 7%;
+		z-index: 100000;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		background-image: url("crt.gif");
+	}
 	#screensize {
 		color: grey;
 	    font-style: italic;
@@ -76,6 +88,8 @@ function play() {
 </style>
 </head>
 <body>
+<div class="foreground">
+</div>
 <b><center><h1 style="color:orange" class=glow>Welcome to nbgi's website.</h1></center>
 <b><i><center><h5 id="quoteDisplay" style="color:grey"></center></i></h5>
 <b><i><center><h5 id="screensize">Your display size is: </i></center></h5>

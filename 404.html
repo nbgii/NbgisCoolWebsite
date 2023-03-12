@@ -56,9 +56,23 @@ function play() {
 		from { transform: translateX(0); }
 	to { transform: translateX(-50%); }
 	}
+	.foreground {
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		position: absolute;
+		opacity: 7%;
+		z-index: 100000;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		background-image: url("crt.gif");
+	}
 </style>
 </head>
 <body>
+<div class="foreground">
+</div>
 <div class="marquee">
 <div class="track">
 <div class="glow">
