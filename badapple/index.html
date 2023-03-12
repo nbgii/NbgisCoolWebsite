@@ -14,28 +14,21 @@ function play() {
 }
 </script>
 <style>
-    body {
-	    font-family: "Trebuchet MS";
+body {
 		background-color: black;
-		background-image: url('badapple.gif');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center; 
-      }
+}
+#background-video {
+		height: 50vh;
+		width: 50vw;
+		position: center;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
 </style>
 <body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<b><center><h4 style="color:silver">Don't tab out or switch tabs or else this shit will break lol.</h4></center>
-<b><center><h4 style="color:silver">Make sure autoplay is enabled in your browser as well.</h4></center>
-<b><center><h4 style="color:silver">You can find the source code to this """port"""
-<a href="https://github.com/nbgii/Bad-HTML-Apple">here.</a></h4></center></center>
-<b><center><h4 style="color:silver">You can return to the main site
-<a href="https://nbgii.github.io/">here.</a></h4></center>
+<center><video id="background-video" autoplay loop muted><source src="badapple.webm" type="video/webm"></video></center>
 </body>
 </html>
