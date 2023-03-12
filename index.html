@@ -59,19 +59,19 @@ function play() {
 	}
 	@media (min-width: 1400px) {
 		#screensize::after {
-			content: "Good";
+			content: "Good, all elements will work as intended.";
 			color: rgb(46, 255, 46);
 		}
 	}
 	@media (max-width: 1400px) {
 		#screensize::after {
-			content: "Small (elements might appear broken, zoom out with browser zoom)";
+			content: "Small, elements MIGHT appear broken, please either zoom out with browser zoom, use a computer or get off your phone.)";
 			color: Orange;
 		}
 	}
 	@media (max-width: 1000px) {
 		#screensize::after {
-			content: "Too small (elements will appear broken, zoom out with browser zoom)";
+			content: "Too small, elements will appear broken, please either zoom out with browser zoom, use a computer or get off your phone.";
 			color: red;
     }
 	@media (max-width: 600px) {
@@ -79,7 +79,7 @@ function play() {
 			margin: 0;
     }
     #screensize::after {
-        content: "Too small (elements will appear broken, zoom out with browser zoom)";
+        content: "Too small, elements will appear broken, please either zoom out with browser zoom, use a computer or get off your phone.";
         color: darkred;
     }
 </style>
