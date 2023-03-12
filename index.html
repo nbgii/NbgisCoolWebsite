@@ -41,11 +41,44 @@ function play() {
                        0 0 15px #fcee6a, 0 0 70px #fcee6a, 0 0 40px #fcee6a;
         }
       }
+	#screensize {
+		color: grey;
+	    font-style: italic;
+		display: inline-block;
+		margin: auto auto 1rem;
+		text-align: center;
+	}
+	@media (min-width: 1400px) {
+		#screensize::after {
+			content: "Good";
+			color: rgb(46, 255, 46);
+		}
+	}
+	@media (max-width: 1400px) {
+		#screensize::after {
+			content: "Small (elements might appear broken, zoom out with browser zoom)";
+			color: Orange;
+		}
+	}
+	@media (max-width: 1000px) {
+		#screensize::after {
+			content: "Too small (elements will appear broken, zoom out with browser zoom)";
+			color: red;
+    }
+	@media (max-width: 600px) {
+		body {
+			margin: 0;
+    }
+    #screensize::after {
+        content: "Too small (elements will appear broken, zoom out with browser zoom)";
+        color: darkred;
+    }
 </style>
 </head>
 <body>
 <b><center><h1 style="color:orange" class=glow>Welcome to nbgi's website.</h1></center>
 <b><i><center><h5 id="quoteDisplay" style="color:grey"></center></i></h5>
+<b><i><center><h5 id="screensize">Your display size is: </i></center></h5>
 <script>
 var quotes = ["&quot;I'm not so sure I want to get to the surface. What if the world finds out what we were doing down here?&quot;", "&quot;Shutting down. Attempting shut down. It's not...it's-it's not...it's not shutting down...it's not... &quot;", "&quot;They're waiting for you, Gordon. In the Test Chamber.&quot;", "&quot;Do you know who ate all the donuts?&quot;", "&quot;Hey, what the hell are you doing down here? Get topside! I hear troops are coming in to save us!&quot;", "&quot;Heh, that'll look nice in my trophy room.&quot;", "&quot;Hey, catch me later, I'll buy you a beer.&quot;", "&quot;Gordon Freeman in the flesh. Or rather, in the hazard suit.&quot;", "&quot;Wisely done, Mr. Freeman. I will see you up ahead.&quot;", "&quot;But there is still the lingering matter of witnesses. I admit I have a fascination with those who adapt and survive against all odds. They rather remind me of myself. If for no other reason, I have argued to preserve you for a time.&quot;", "&quot;Well, it looks like we won't be working together. No regrets, Mr. Freeman.&quot;", "&quot;I took the liberty of relieving you of your weapons; most of them were government property. As for the suit, I think you’ve earned it.&quot;", "&quot;Otherwise... well... I can offer you a battle you have no chance of winning. Rather an anticlimax, after what you’ve just survived.&quot;", "&quot;We will kick your ass!&quot;", "&quot;Squad, we got Freeman!&quot;", "&quot;Shit! We got hostiles!&quot;", "&quot;Squad, neutralize Freeman!&quot;", "&quot;Well, the pilot thought we were headin' to your mother's house, heh. So far this all looks familiar.&quot;", "&quot;Don't tick me off, Gordon.&quot;", "&quot;Come on, Gordon! You trying to get me into trouble?&quot;", "&quot;Hey, Mr. Freeman. I had a bunch of messages for you, but we had a system crash about twenty minutes ago and I'm still trying to find my files. Just one of those days I guess.&quot;", "&quot;Morning, Mr. Freeman. Looks like you're running late.&quot;", "&quot;Fighting aliens is not in my job description!&quot;", "&quot;I tell you, wouldn't you just love a cold beer right about now? I know I would.&quot;", "&quot;You know, nobody likes a bully!&quot;", "&quot;Mmm... candy!&quot;", "&quot;Huh, my cousin is the one that got me this job!&quot;", "&quot;Hmm, I'd love to hang that over my fireplace! Y'know, if I had one.&quot;", "&quot;My mom is gonna worry when I don't make it home tonight!&quot;", "&quot;Oh, you've woken up. Corporal Shephard, is it? I've read the tag on your uniform.&quot;", "&quot;Ah, yes, Walter. We were finally able to successfully detach one of the Barnacle creatures from its point of gestation.&quot;", "&quot;You've got to believe me. Freeman could be anywhere!&quot;", "&quot;Weren't you supposed to be in the test chamber half an hour ago?&quot;", "&quot;Excuse me, Gordon, but I'm rather busy now.&quot;", "&quot;Please, leave me alone until after the experiment.&quot;", "&quot;The military cleanup is just a paranoid rumor, isn't it?&quot;", "&quot;Ah, hello, Gordon Freeman. It's good to see you.&quot;", "&quot;You are from the Anomalous Materials Lab. Yes, I recognize you.&quot;", "&quot;Someone has hidden my glasses again.&quot;", "&quot;Is anyone else getting hungry?&quot;", "&quot;Don't worry, I am a doctor.&quot;", "&quot;Do you still say there's nothing to chaos theory?&quot;", "&quot;Shouldn't we try to capture a specimen?&quot;", "&quot;I believe this will make for a notable paper, don't you?&quot;", "&quot;I hope those containment parameters are still nominal.&quot;", "&quot;Don't shoot! I'm with the science team!&quot;", "&quot;Oh my God...we're doomed!&quot;"];
 
