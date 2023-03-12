@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>0x40</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Non minified at https://github.com/mon/0x40-web/ -->
+        <link rel="stylesheet" href="css/hues-min.css">
+        <script type="text/javascript" src="lib/hues-min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", function() {
+                var defaults = {
+					disableRemoteResources: true,
+                    workersPath : "lib/workers/",
+                    respacks : ["./packs/Defaults_v5.0_Opaque.zip",
+                                "./packs/CharPackage v0.03 Opaque.zip",
+                                "./packs/HuesMixA.zip"
+                                ],
+					firstImage: "Lain Iwakura",
+                    firstSong : "Nhato - Miss You",
+                };
+                core = new HuesCore(defaults);
+            });
+        </script>
+    </head>
+    <body>
+        This page requires Javascript.
+    </body>
+</html>
