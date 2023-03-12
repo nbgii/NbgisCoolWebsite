@@ -78,7 +78,16 @@ function play() {
 <br>
 <br>
 <center><img src="404.gif"></center>
-<b><i><center><h5 style="color:grey">"It appears the containment system has completely failed."</center></i></h5>
+<b><i><center><h5 id="quoteDisplay" style="color:grey"></center></i></h5>
+<script>
+var quotes = ["&quot;It appears the containment system has completely failed.&quot;", "&quot;Hey, what the hell are you doing down here? Get topside! I hear troops are coming in to save us!&quot;", "&quot;Cleverly done, Mr. Freeman, but you're not supposed to be here. As a matter of fact, you're not.&quot;"];
+
+function newQuote() {
+  var randomNumber = Math.floor(Math.random() * quotes.length);
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+newQuote();
+</script>
 <center><h2 style="color:silver">Sorry, this link does not exist, why not return to the main site
 <a href="index.html">here.</a></h2></center>
 <br>
