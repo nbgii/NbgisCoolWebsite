@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<audio src="404bgm.ogg" autoplay loop></audio>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 300);
+};
+titleScroller("[404] [404]   ")
+function play() {
+}
+</script>
+<style>
+    body {
+        font-family: "Trebuchet MS";
+		background-color: black;
+		background-image: url('background.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+      }
+      .glow {
+        font-size: 50px;
+        color: #FFFF00;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #eeeeee, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 
+                       0 0 25px #ffe600, 0 0 30px #ffe600, 0 0 35px #ffe600;
+        }
+        to {
+          text-shadow: 0 0 10px #eeeeee, 0 0 15px #fcee6a, 0 0 10px #fcee6a, 0 0 25px #fcee6a,
+                       0 0 15px #fcee6a, 0 0 70px #fcee6a, 0 0 40px #fcee6a;
+        }
+      }
+	.marquee {
+		position: relative;
+		width: 100vw;
+		max-width: 100%;
+	}
+	.track {
+		position: absolute;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 32s linear infinite;
+	}
+	@keyframes marquee {
+		from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+	}
+</style>
+</head>
+<body>
+<div class="marquee">
+<div class="track">
+<div class="glow">
+<header><div class="content"" style="color:orange">&nbsp;[404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404]</div></header>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><img src="404.gif"></center>
+<b><i><center><h5 style="color:grey">"It appears the containment system has completely failed."</center></i></h5>
+<center><h2 style="color:silver">Sorry, this link does not exist, why not return to the main site
+<a href="index.html">here.</a></h2></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="marquee">
+<div class="track">
+<div class="glow">
+<footer><div class="content" style="color:orange">&nbsp;[404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404][404]</div></footer>
+</div>
+</div>
+</div>
+</body>
+</html>
