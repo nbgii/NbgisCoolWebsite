@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<audio src="badapple.mp3" autoplay loop></audio>
+<script>
+function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 300);
+};
+titleScroller("[Bad Apple!!]    ")
+function play() {
+}
+</script>
+<style>
+    body {
+	    font-family: "Trebuchet MS";
+		background-color: black;
+		background-image: url('badapple.gif');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
+      }
+</style>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b><center><h4 style="color:silver">Don't tab out or this shit breaks lol.</h4></center>
+<b><center><h4 style="color:silver">Make sure autoplay is enabled in your browser as well.</h4></center>
+<b><center><h4 style="color:silver">You can find the source code to this """port"""
+<a href="https://github.com/nbgii/Bad-HTML-Apple">here.</a></h4></center></center>
+<b><center><h4 style="color:silver">You can return to the main site
+<a href="https://nbgii.github.io/">here.</a></h4></center>
+</body>
+</html>
