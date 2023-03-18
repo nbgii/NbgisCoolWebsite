@@ -241,5 +241,13 @@ resetBtn.addEventListener('mouseleave', function() {
 </script>
 <br>
 <center><img src="Yuuka_Ad.gif" onclick="location.href='http://www.mytouhoupage.net/yuuka-shrine'"></center>
+<audio id="interact" preload="auto" src="suit_denydevice.wav"></audio>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 69) {
+    document.getElementById('interact').play();
+  }
+});
+</script>
 </body>
 </html>
