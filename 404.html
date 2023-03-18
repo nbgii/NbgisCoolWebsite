@@ -61,7 +61,7 @@ function play() {
 		height: 100vh;
 		margin: 0;
 		position: absolute;
-		opacity: 25%;
+		opacity: 15%;
 		z-index: 100000;
 		left: 0;
 		top: 0;
@@ -91,7 +91,20 @@ function play() {
 <br>
 <br>
 <br>
-<center><img src="404.gif"></center>
+<script type="text/javascript">
+  var imageURLs = [
+       "404.gif"
+     , "404alt.gif"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+<center><script type="text/javascript">document.write(getImageTag());</script></center>
 <b><i><center><h5 id="quoteDisplay" style="color:grey"></center></i></h5>
 <script>
 var quotes = ["&quot;It appears the containment system has completely failed.&quot;", "&quot;Hey, what the hell are you doing down here? Get topside! I hear troops are coming in to save us!&quot;", "&quot;Cleverly done, Mr. Freeman, but you're not supposed to be here. As a matter of fact, you're not.&quot;"];
