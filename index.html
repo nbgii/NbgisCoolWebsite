@@ -46,12 +46,12 @@ function play() {
 		height: 100vh;
 		margin: 0;
 		position: absolute;
-		opacity: 7%;
+		opacity: 25%;
 		z-index: 100000;
 		left: 0;
 		top: 0;
 		pointer-events: none;
-		background-image: url("crt.gif");
+		background-image: url("scanlines.png");
 	}
 	#screensize {
 		color: grey;
@@ -110,7 +110,7 @@ function ClickSFX() {
 <b><center><h4 style="color:grey" id="AboutMe"></h4>
 <script>
 function AboutMeFunction() {
-  document.getElementById("AboutMe").innerHTML = "Born and raised in &#x1F1EE;&#x1F1EA. My birthday is on the 27th of November and my pronouns are He/Him/His.";
+  document.getElementById("AboutMe").innerHTML = "Born and raised in &#x1F1EE;&#x1F1EA. My birthday is on the 27th of November, I'm a guy.";
 }
 </script>
 <audio id="hover" preload="auto" src="buttonrollover.wav"></audio>
@@ -208,90 +208,9 @@ resetBtn.addEventListener('mouseleave', function() {
   hover.currentTime = 0;
 }, false);
 </script>
-<b><center><h2 onclick="location.href='coolsites'; ClickSFX()" style="color:silver" id="playCS">Cool Sites</h2>
-<script>
-var playBtn = document.getElementById('playCS'),
-  resetBtn = document.getElementById('reset'),
-  hearbeat = document.getElementById('hover')
-  audios = document.querySelectorAll('audio');
-console.log(audios);
-playBtn.addEventListener('mouseover', function() {
-[].forEach.call(audios, function(audio) {
-  hover.play();
-});
-}, false);
-
-playBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-
-resetBtn.addEventListener('mouseover', function() {
-    hover.play();
-}, false);
-
-resetBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-</script>
 <b><center><h2 onclick="location.href='0x40'; ClickSFX()" style="color:silver" id="play0x40">0x40</h2>
 <script>
 var playBtn = document.getElementById('play0x40'),
-  resetBtn = document.getElementById('reset'),
-  hearbeat = document.getElementById('hover')
-  audios = document.querySelectorAll('audio');
-console.log(audios);
-playBtn.addEventListener('mouseover', function() {
-[].forEach.call(audios, function(audio) {
-  hover.play();
-});
-}, false);
-
-playBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-
-resetBtn.addEventListener('mouseover', function() {
-    hover.play();
-}, false);
-
-resetBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-</script>
-<b><center><h2 onclick="location.href='badapple'; ClickSFX()" style="color:silver" id="playBA">Bad Apple!!</h2>
-<script>
-var playBtn = document.getElementById('playBA'),
-  resetBtn = document.getElementById('reset'),
-  hearbeat = document.getElementById('hover')
-  audios = document.querySelectorAll('audio');
-console.log(audios);
-playBtn.addEventListener('mouseover', function() {
-[].forEach.call(audios, function(audio) {
-  hover.play();
-});
-}, false);
-
-playBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-
-resetBtn.addEventListener('mouseover', function() {
-    hover.play();
-}, false);
-
-resetBtn.addEventListener('mouseleave', function() {
-  hover.pause();
-  hover.currentTime = 0;
-}, false);
-</script>
-<b><center><h2 onclick="location.href='https://www.youtube.com/@kramoid'; ClickSFX()" style="color:silver" id="playYT">YouTube</h2>
-<script>
-var playBtn = document.getElementById('playYT'),
   resetBtn = document.getElementById('reset'),
   hearbeat = document.getElementById('hover')
   audios = document.querySelectorAll('audio');
